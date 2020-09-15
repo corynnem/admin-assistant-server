@@ -10,7 +10,6 @@ module.exports = sequelize.define('user', {
         passwordhash: {
             type: DataTypes.STRING,
             allowNull: false,
-            unique: true,
         },
         admin : {
             type: DataTypes.BOOLEAN,

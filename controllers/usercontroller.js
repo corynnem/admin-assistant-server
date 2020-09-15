@@ -9,7 +9,7 @@ router.post('/signup', (req, res) => {
     UserModel.create({
         email: req.body.user.email,
         passwordhash: bcrypt.hashSync(req.body.user.password, 12),
-        admin: req.body.user.admin === true ? req.body.user.admin === true : req.body.user.admin === false
+        admin: req.body.user.admin === true ? req.body.user.admin === true : req.body.user.admin === true
     })
     .then(
         function success(user) {
